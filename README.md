@@ -358,26 +358,7 @@ while keeping the attendant workflow simple and fast.
 - Repair Installation validates the actual collections used by the UI and reports what it restored.
 - The machine seed always restores W1-W3 and D1-D3 with the configured Haier models and 9kg shop operating limit.
 
-## Demo v16.4.6 stabilization
 
-- Inventory products now use one canonical product catalog shared by New Order and Inventory.
-- Inventory repair/reset state is persisted and validated so it survives refresh.
-- Fresh/reset demo data includes realistic detergent, fabric conditioner, dispensing-container, and laundry-bag stock.
-- Empty screens show explicit messages such as “No released transactions” or “No machines configured” instead of appearing blank.
-
-## Demo v16.4.6 stabilization
-
-- Inventory products use one canonical product catalog shared by New Order and Inventory.
-- Inventory created by reset or Repair Installation is persisted and checked so it survives refresh.
-- Fresh/reset demo data includes realistic detergent, fabric conditioner, dispensing-container, and laundry-bag stock.
-- Empty screens show explicit messages such as “No released transactions” and “No machines configured” instead of appearing blank.
-
-
-### Inventory rendering and Android release folders
-
-- Inventory, New Order supply selectors, and Configuration use the same inventory product catalog.
-- The Inventory screen renders the canonical Stock, Containers, and Movements panels rather than the retired legacy inventory list.
-- Android release ZIPs include a `.nomedia` marker so extracted launcher icons are not normally indexed by Gallery.
 
 ## Demo State & Upgrades
 
@@ -392,21 +373,7 @@ The browser demo intentionally uses a simpler, deterministic state model.
 
 This simplified approach keeps the prototype predictable. The production PostgreSQL application will use explicit database migrations and stronger transactional integrity.
 
-## Demo v16.5.2 regression recovery
+## Developer
 
-- Restored browser-based receipt printing and physical load-label printing from active transactions.
-- Restored Print Load Label and Print All Load Labels actions with human-friendly `#transaction-letter` labels.
-- Restored 58mm / 80mm print-width settings; automatic printing remains off by default.
-- Confirmed Users & Access, user creation/editing/activation, role permissions, user switching, device lock, and shift controls remain present and permission-gated to the appropriate roles.
-- Improved machine-card hierarchy so machine ID and the 9kg shop operating maximum cannot visually merge.
-- Preserved the simplified browser-state architecture and v16.5.1 Inventory authentication/render timing fix.
-
-## Demo v16.5.3 workflow stabilization
-
-- Fixes System Administrator user editing and refreshes role/permission UI after changes.
-- Machine Assignment is load-driven and can present eligible washer and dryer loads together.
-- Auto-fill spans mixed machine types, preserves manual choices, remains reviewable, and yields primary emphasis to Confirm once no more assignments are available.
-- Machine Assignment shows machine IDs without capacity text.
-- Available Operations machine cards make the waiting-load assignment action more prominent.
-- Clarifies transaction classification as Customer Type, Order Mode, Received Via, and Return Via.
-- Wash-service supply selection is derived from configurable service workflow/consumption settings and supports apply-to-all plus per-load overrides for multiple same-service loads.
+Ronald Cepres  
+rbcepres@gmail.com
