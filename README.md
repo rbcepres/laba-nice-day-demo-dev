@@ -112,7 +112,6 @@ before development of the production system.
 -   Allow staff to work either from the load queue or from an available
     machine.
 
-
 ## 🏭 Actual Machine Configuration
 
 - Default washers are Haier HCW12CS professional washers.
@@ -192,7 +191,6 @@ before development of the production system.
 -   Allow Owner/Admin customer editing.
 -   Record customer information changes in the audit trail.
 
-
 ## 👤 Users, Roles & Access
 
 - Sign in with a local user and PIN.
@@ -256,7 +254,6 @@ The current demo is browser-based.
     continue.
 -   The browser prototype is intended for workflow testing and
     validation, not as the final production database.
-
 
 ### Demo Reset & Fresh Installation
 
@@ -322,7 +319,6 @@ while keeping the attendant workflow simple and fast.
 **Developed by:** Ronald Cepres\
 **Email:** rbcepres@gmail.com
 
-
 ## 👤 Access hierarchy and customer data
 
 - **System Administrator** has full technical and business access, including backup restore and system-level user management.
@@ -344,21 +340,6 @@ while keeping the attendant workflow simple and fast.
 - A fresh reset restores the default customers, services, machines, realistic demo inventory, and demo user accounts while leaving transactions and queues empty.
 - **Repair Installation** can restore required seed data if an incomplete browser state is detected.
 - Normal upgrades still preserve and migrate existing browser data; intentional reset is handled separately so recovery logic cannot re-load a broken empty state.
-
-### v16.4.4 initialization reliability
-
-- Fresh installs and Reset Demo Data use one canonical demo-state initializer.
-- Repair Installation validates the actual service, machine, customer, inventory and user collections used by the UI.
-- Repair Installation reports the components it restored instead of silently completing.
-- Default machine seed contains W1-W3 and D1-D3 with the configured Haier specifications and 9kg shop operating limit.
-
-### v16.4.4 installation reliability
-
-- Fresh installation and Reset Demo Data now use one canonical demo-state initializer.
-- Repair Installation validates the actual collections used by the UI and reports what it restored.
-- The machine seed always restores W1-W3 and D1-D3 with the configured Haier models and 9kg shop operating limit.
-
-
 
 ## Demo State & Upgrades
 
