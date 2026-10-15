@@ -265,12 +265,12 @@ The current demo is browser-based.
 ## 🖨️ Printing
 
 - Supports direct Bluetooth ESC/POS printing through the configured thermal printer profile.
-- Receipt and load-label actions show a preview before Bluetooth printing.
+- Receipt and load-label actions show a preview before Bluetooth printing, including current printer connection status and a clear Skip Print action.
 - Receipt preview and ESC/POS receipt output derive from the same receipt layout model so section order, totals, transport status and emphasis remain aligned.
 - Load-label preview and ESC/POS output share one layout model so the preview follows the physical label structure.
 - If a Bluetooth print is requested while disconnected, the printer chooser opens from that print action and the requested print continues after a successful connection.
 - New Order can optionally offer receipt preview followed by load-label preview after the order is safely saved; either offer can be disabled in Printing settings.
-- Receipt shop name/address and receipt copy count are configurable in Printing settings. Later receipt copies initiated from a transaction are marked REPRINT and audited after successful Bluetooth transmission.
+- Receipt shop name/address and receipt copy count are configurable in Printing settings. Pickup/delivery receipts include the customer address below the contact number. Later receipt copies initiated from a transaction are marked REPRINT and audited after successful Bluetooth transmission.
 - Bluetooth receipts currently use a text shop header; the experimental raster-logo header is disabled until its thermal-printer encoding is proven reliable.
 - Print a single physical load label or all load labels for a transaction.
 - Browser/System Print remains available as a fallback transport.
