@@ -266,6 +266,8 @@ The current demo is browser-based.
 
 - Supports direct Bluetooth ESC/POS printing through the configured thermal printer profile.
 - Receipt and load-label actions show a preview before Bluetooth printing.
+- Load-label preview and ESC/POS output share one layout model so the preview follows the physical label structure.
+- Bluetooth receipts currently use a text shop header; the experimental raster-logo header is disabled until its thermal-printer encoding is proven reliable.
 - Print a single physical load label or all load labels for a transaction.
 - Browser/System Print remains available as a fallback transport.
 - Bluetooth connection and test printing are available from Printing settings.
