@@ -45,6 +45,7 @@ The demo stores its data in the browser. Use sample information only; do not ent
 - Adjust receipt copies from the print preview.
 - Reprint receipts with clear reprint identification and audit recording.
 - Offer receipt and load-label previews automatically after a new order when enabled.
+- Open a connected printer-driven cash drawer automatically when a newly confirmed order is paid in Cash.
 
 ### Inventory and supplies
 - Maintain laundry products and supply information.
