@@ -262,6 +262,14 @@ The current demo is browser-based.
 - If the service catalog is incomplete, the demo restores the default service catalog before rendering New Order.
 - **Repair Installation** also checks that actual load-producing services exist, not merely that a catalog array is present.
 
+## 🖨️ Printing
+
+- Supports direct Bluetooth ESC/POS printing through the configured thermal printer profile.
+- Receipt and load-label actions show a preview before Bluetooth printing.
+- Print a single physical load label or all load labels for a transaction.
+- Browser/System Print remains available as a fallback transport.
+- Bluetooth connection and test printing are available from Printing settings.
+
 ## 🌐 Demo
 
 The current demo is available through GitHub Pages:
