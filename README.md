@@ -83,5 +83,5 @@ Ronald Cepres
 rbcepres@gmail.com
 
 
-## v16.5.10-dev.2
+## v16.5.10-dev.2.1
 Stable-based Payment Ledger Gate 1 development build. Adds optional/partial checkout payments, append-only payment entries, pending GCash verification, later partial payments, ledger totals, payment history/status on transaction details and receipts, and entry-triggered cash drawer behavior.
