@@ -1,6 +1,6 @@
 {
-  "name": "Laba Nice Day Demo DEV",
-  "short_name": "LND DEV",
+  "name": "Laba Nice Day Demo",
+  "short_name": "LND Demo",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
