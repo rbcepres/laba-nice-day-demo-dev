@@ -93,3 +93,12 @@ Stable-based Payment Ledger Gate 1 development build. Adds optional/partial chec
 - Add receipt raster cache hit/miss diagnostics and raster preparation timing.
 - Add receipt ESC/POS build and transport submission timing diagnostics.
 - Preserve Printer Bridge v0.3.1 integration and printed receipt appearance.
+
+
+## v16.5.10-dev.2.2.1
+
+- Adds tablet-visible Print Diagnostics under Settings > Printing.
+- Shows raster cache HIT/MISS, raster preparation, receipt build, printer submission, and total app-side timing.
+- Keeps a short in-memory recent receipt timing history.
+- Adds UI controls to clear the raster cache and diagnostic log without DevTools.
+- Does not alter receipt rendering, Printer Bridge v0.3.1, or payment behavior.
