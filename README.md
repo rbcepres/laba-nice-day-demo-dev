@@ -83,5 +83,13 @@ Ronald Cepres
 rbcepres@gmail.com
 
 
-## v16.5.10-dev.2.1
+## v16.5.10-dev.2.2
 Stable-based Payment Ledger Gate 1 development build. Adds optional/partial checkout payments, append-only payment entries, pending GCash verification, later partial payments, ledger totals, payment history/status on transaction details and receipts, and entry-triggered cash drawer behavior.
+
+
+## v16.5.10-dev.2.2
+
+- Cache printer-ready receipt raster header bytes for unchanged raster headers.
+- Add receipt raster cache hit/miss diagnostics and raster preparation timing.
+- Add receipt ESC/POS build and transport submission timing diagnostics.
+- Preserve Printer Bridge v0.3.1 integration and printed receipt appearance.
