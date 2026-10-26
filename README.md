@@ -102,3 +102,7 @@ Stable-based Payment Ledger Gate 1 development build. Adds optional/partial chec
 - Keeps a short in-memory recent receipt timing history.
 - Adds UI controls to clear the raster cache and diagnostic log without DevTools.
 - Does not alter receipt rendering, Printer Bridge v0.3.1, or payment behavior.
+
+
+## v16.5.10-dev.2.2.2
+Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, Full Logo) through the normal Printer Bridge /job path with payload, chunk-count, LND send, and Bridge timing display.
