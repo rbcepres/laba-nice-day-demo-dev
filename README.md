@@ -122,3 +122,12 @@ Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, 
 - Associate New Order field labels with existing controls and provide visible keyboard focus.
 - Show red invalid amount borders for Collect Payment and New Order, preserving the existing inline error and toast respectively; clear the border on editing or successful validation.
 - Preserve service selection, pricing, ledger, storage, printing, authentication and operational logic.
+
+
+### v16.5.10-dev.2.2.5 — Modular counter workflow
+
+- Add independent customer identification, payment defaults, advanced-field visibility and previewable configuration presets with tracking safeguards.
+- Preserve existing configuration until explicitly changed. Anonymous orders do not create customer master records; identify an anonymous order when a subsequent payment requires it.
+- Reuse shared receipt/label prompt preferences in General. Retain manual printing, transaction navigation and release.
+- Exact defaults follow the order total including transport and reviewed bulk totals; manual amounts stay manual. Reset order-entry fields after confirmation.
+- No ledger calculation, receipt format, printer bridge, reconciliation or storage-key changes.
