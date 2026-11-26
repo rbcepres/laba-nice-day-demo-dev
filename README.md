@@ -131,3 +131,11 @@ Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, 
 - Reuse shared receipt/label prompt preferences in General. Retain manual printing, transaction navigation and release.
 - Exact defaults follow the order total including transport and reviewed bulk totals; manual amounts stay manual. Reset order-entry fields after confirmation.
 - No ledger calculation, receipt format, printer bridge, reconciliation or storage-key changes.
+
+
+### v16.5.10-dev.2.2.6 — Modular workflow corrections
+
+- Consolidate preset and order settings under Operations alongside existing tracking controls; keep shared counter print preferences in General.
+- Derive the selected preset from actual settings, including Custom, and show persistent blocking reasons with no partial changes.
+- Restore the missing transaction add-on action using enabled catalog transaction add-ons and append-only charge snapshots. Show added charges in transaction details and reuse existing receipt and balance logic.
+- Retain tracking guards, payment policy, ledger, release, printer integration and reconciliation.
