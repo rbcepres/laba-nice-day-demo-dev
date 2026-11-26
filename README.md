@@ -114,3 +114,11 @@ Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, 
 - Show recorded payment methods, amounts, amount paid and balance on customer receipts without internal verification statuses or totals (all print transports).
 - Add read-only per-payment GCash proof viewing from existing IndexedDB records, including missing-image feedback and object URL cleanup.
 - Preserve ledger calculations, existing proof storage format, cash drawer logic and printer transport behavior.
+
+## v16.5.10-dev.2.2.4 — Clean Counter: New Order prototype
+
+- Apply scoped logo-inspired color, typography, service tiles, consumables, customer fields, order summary and checkout presentation.
+- Keep Modern/Counter and Classic layouts, responsive single-column flow, mobile checkout and device-local density settings; allow short desktop viewports to scroll without a constrained checkout panel.
+- Associate New Order field labels with existing controls and provide visible keyboard focus.
+- Show red invalid amount borders for Collect Payment and New Order, preserving the existing inline error and toast respectively; clear the border on editing or successful validation.
+- Preserve service selection, pricing, ledger, storage, printing, authentication and operational logic.
