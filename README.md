@@ -139,3 +139,11 @@ Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, 
 - Derive the selected preset from actual settings, including Custom, and show persistent blocking reasons with no partial changes.
 - Restore the missing transaction add-on action using enabled catalog transaction add-ons and append-only charge snapshots. Show added charges in transaction details and reuse existing receipt and balance logic.
 - Retain tracking guards, payment policy, ledger, release, printer integration and reconciliation.
+
+
+### v16.5.10-dev.2.2.7 — Compact counter and unified add-ons
+
+- Compress New Order spacing while preserving density modes and existing touch controls; convert binary workflow/printing settings to switches and use red for blocked settings.
+- Itemize preordered extra cycles in the cart and new transaction snapshots; recover historical cycle rows only when stored amounts reconcile. Reuse charge breakdown for transaction details and receipts.
+- Unify transaction and load add-on selection. Untracked orders receive charge-only add-ons; tracked orders require an eligible load for load-specific charges and queue additional cycles without replacing active machine assignments.
+- Preserve untracked load status during reconciliation, including repair of stale waiting stages. Retain tracked recovery, release, payment collection and printer integration.
