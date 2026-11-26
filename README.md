@@ -106,3 +106,11 @@ Stable-based Payment Ledger Gate 1 development build. Adds optional/partial chec
 
 ## v16.5.10-dev.2.2.2
 Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, Full Logo) through the normal Printer Bridge /job path with payload, chunk-count, LND send, and Bridge timing display.
+
+## v16.5.10-dev.2.2.3
+
+- Fix active and released transaction details by using locally accessible HTML escaping and load-label helpers.
+- Keep Collect Payment open on invalid amounts, with inline feedback and preserved method.
+- Show recorded payment methods, amounts, amount paid and balance on customer receipts without internal verification statuses or totals (all print transports).
+- Add read-only per-payment GCash proof viewing from existing IndexedDB records, including missing-image feedback and object URL cleanup.
+- Preserve ledger calculations, existing proof storage format, cash drawer logic and printer transport behavior.
