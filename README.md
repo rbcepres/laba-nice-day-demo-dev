@@ -147,3 +147,11 @@ Adds controlled standalone raster transmission benchmarks (Tiny, Small, Mascot, 
 - Itemize preordered extra cycles in the cart and new transaction snapshots; recover historical cycle rows only when stored amounts reconcile. Reuse charge breakdown for transaction details and receipts.
 - Unify transaction and load add-on selection. Untracked orders receive charge-only add-ons; tracked orders require an eligible load for load-specific charges and queue additional cycles without replacing active machine assignments.
 - Preserve untracked load status during reconciliation, including repair of stale waiting stages. Retain tracked recovery, release, payment collection and printer integration.
+
+
+### v16.5.10-dev.2.2.8 — Cash tender and shared customer selection
+
+- Allow cash tender above the amount due in New Order and Collect Payment; store applied amount, tendered cash and change separately per payment. Preserve ledger totals and GCash overpayment restrictions.
+- Show live applied amount, change and remaining balance, with Exact and common cash shortcuts. Preserve existing default payment configuration.
+- Reuse customer lookup, recent suggestions, name/phone search and selection in both workflows. Persist identification only after successful payment; retain existing master customer and delivery details.
+- Include tender and change in transaction details, audit and receipt/reprint paths, including browser printing. Legacy entries remain unchanged; do not invent historical tender.
